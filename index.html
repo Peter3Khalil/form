@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <h1 class="title">Form</h1>
-        <form action="#" method="get">
+        <form action="data/data.html" onsubmit="return validate()" method="get">
             <div class="info">
                 <div class="infoBox">
                     <label for="name">Full Name</label>
@@ -51,11 +51,11 @@
                 </div>
                 <div class="gender">
                     Gender :<br>
-                    <div><input type="radio" name="gender" id="male" required>
+                    <div><input type="radio" name="gender" id="male" value="male" required>
                         <label for="male">Male</label>
                     </div>
                     <div>
-                        <input type="radio" name="gender" id="female" required>
+                        <input type="radio" name="gender" id="female" value="female" required>
                         <label for="female">Female</label>
                     </div>
             </div>
@@ -63,7 +63,7 @@
             <textarea name="bio" id="bio" cols="30" rows="10" placeholder="I am Peter ,I work as frontend developer at Google......"></textarea>
             <div>
                 <label for="cv">Upload Cv : </label>
-                <input type="file" name="cv" id="cv" required>
+                <input type="file" name="cv" id="cv" accept=".pdf" required>
             </div>
            
             <input type="submit" value="Sign Up" class="submit">

@@ -1,31 +1,41 @@
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+   
 }
 body{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: bisque;
+    height: auto;
+    background-color: #988686;
+    padding: 20px;
 }
+
 table {
-    border: 1px solid rgb(203, 33, 33);
+    background-color: #D1D0D0;
+    border: 1px solid #000000;
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
     -ms-border-radius: 13px;
     -o-border-radius: 13px;
     border-spacing: 0;
+    width: 300px;
+    height: auto;
+    
 }
 
 table td {
-    border-bottom: 1px solid DarkOrange;
-    border-right: 1px solid DarkOrange;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
     padding: 10px;
-    max-width: 200px;
+    max-width: 250px;
+    word-wrap: break-word;
 }
 
  tr:last-child td {
@@ -41,4 +51,15 @@ td:nth-of-type(1){
 h1{
     text-align: center;
     margin-bottom: 10px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+tr:nth-child(even){
+    background-color: #b9b6b6;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
 }
